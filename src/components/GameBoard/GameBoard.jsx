@@ -1,8 +1,10 @@
 import React from 'react';
 
 const GameBoard = (props) => (
-  <div> 
-    GameBoard
+  <div className='component'>
+    <div> 
+      GameBoard
+    </div>
   </div>
 );
 
