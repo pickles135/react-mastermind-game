@@ -10,3 +10,9 @@
   font-size: 40px;
   text-align: center;
 }
+
+.component {
+  border: 2px dotted red;
+  margin: 4px;
+  padding: 4px;
+}
