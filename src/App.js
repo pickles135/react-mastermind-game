@@ -4,6 +4,7 @@ import './App.css';
 import GameBoard from './components/GameBoard/GameBoard';
 import ColorPicker from './components/ColorPicker/ColorPicker';
 import GameTimer from './components/GameTimer/GameTimer'
+import NewGameButton from './components/NewGameButton/NewGameButton';
 
 class App extends Component {
   render() {
@@ -13,6 +14,7 @@ class App extends Component {
         <GameBoard />
         <ColorPicker />
         <GameTimer />
+        <NewGameButton />
       </div>
     );
   }
