@@ -3,6 +3,7 @@ import './App.css';
 // Must import components used in JSX
 import GameBoard from './components/GameBoard/GameBoard';
 import ColorPicker from './components/ColorPicker/ColorPicker';
+import GameTimer from './components/GameTimer/GameTimer'
 
 class App extends Component {
   render() {
@@ -11,6 +12,7 @@ class App extends Component {
         <header className="App-header">React Mastermind</header>
         <GameBoard />
         <ColorPicker />
+        <GameTimer />
       </div>
     );
   }
