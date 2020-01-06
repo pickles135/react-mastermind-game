@@ -8,4 +8,4 @@ const Footer = (props) => (
   </div>
 );
 
-export default footer;
+export default Footer;
