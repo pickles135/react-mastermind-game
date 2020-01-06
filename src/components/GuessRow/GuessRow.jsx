@@ -3,7 +3,7 @@ import React from 'react';
 const GuessRow = (props) => (
   <div className='component'>
     <div>
-      GuessRow
+      Guess Row #
     </div>
   </div>
 );
