@@ -1,7 +1,7 @@
 import React from 'react';
 
 const ColorPicker = (props) => (
-  <div className='component'>
+  <div>
     <div>
       ColorPicker
     </div>
