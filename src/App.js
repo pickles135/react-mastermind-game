@@ -6,19 +6,27 @@ import ColorPicker from './components/ColorPicker/ColorPicker';
 import GameTimer from './components/GameTimer/GameTimer'
 import NewGameButton from './components/NewGameButton/NewGameButton';
 
+const colors = ['#7CCCE5', '#FDE47F', '#E04644', '#B576AD'];
+
 class App extends Component {
   constructor() {
     //super must be called before accessing 'this'
     super();
     //state is an object that holds information in it's properties
     this.state = {
-      selColorIdx: 0
+      selColorIdx: 0,
+      guesses = [],
+      code = this.genCode(),
     };
+  };
+
+  genCode() {
+    return new Array(4).fill().map(() => Math.floor(Math.random() * colors.length));
   }
   render() {
     return (
       <div className="App">
-        Selected color: {this.state.selColorIdx}
+        Selected color: {colors[this.state.selColorIdx]}
           <header className="App-header">React Mastermind</header>
             <div className='flex-h'>
               <GameBoard />
