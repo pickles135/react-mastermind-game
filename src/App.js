@@ -38,7 +38,7 @@ class App extends Component {
             <div className='flex-h'>
               <GameBoard />
               <div>
-                <ColorPicker />
+                <ColorPicker colors={colors} />
                 <GameTimer />
                 <NewGameButton />
               </div>
