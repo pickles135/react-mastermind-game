@@ -28,9 +28,9 @@ class App extends Component {
     return (
       <div className="App">
         <button onClick={() => 
-        this.setState({
-          selColorIdx: ++this.state.selColorIdx % 4
-        })}>
+        this.setState(state => (
+          {selColorIdx: ++state.selColorIdx % 4}
+        ))}>
           NextColor
         </button>
         Selected color: {colors[this.state.selColorIdx]}
