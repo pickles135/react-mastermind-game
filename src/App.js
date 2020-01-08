@@ -15,8 +15,8 @@ class App extends Component {
     //state is an object that holds information in it's properties
     this.state = {
       selColorIdx: 0,
-      guesses = [],
-      code = this.genCode(),
+      guesses: [],
+      code: this.genCode(),
     };
   };
 
