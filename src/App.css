@@ -1,5 +1,6 @@
 .App {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .App-header {
@@ -11,8 +12,8 @@
   text-align: center;
 }
 
-.component {
+/* .component {
   border: 2px dotted red;
   margin: 4px;
   padding: 4px;
-}
+} */

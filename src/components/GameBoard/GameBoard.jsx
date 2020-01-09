@@ -2,12 +2,15 @@ import React from 'react';
 import GuessRow from '../GuessRow/GuessRow'
 
 const GameBoard = (props) => (
-  <div className='component'>
-    <div> 
-      GameBoard
-      <GuessRow />
-      <GuessRow />
-    </div>
+  <div>
+    {props.guesses.map((guess, idx) => 
+      <GuessRow
+        guess={guess}
+        colors={props.colors}
+        rowIdx={idx}
+        key={idx}
+      />
+    )}
   </div>
 );
 
