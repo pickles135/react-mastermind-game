@@ -15,7 +15,7 @@ class App extends Component {
     //state is an object that holds information in it's properties
     this.state = {
       selColorIdx: 0,
-      guesses: [this.getNewGuess()],
+      guesses: [this.getNewGuess(), this.getNewGuess()],
       code: this.genCode(),
     };
   };
@@ -26,7 +26,9 @@ class App extends Component {
 
   getNewGuess() {
     return {
-      code: [null, null, null, null],
+      code: [3, 2, 1, 0],
+      //TODO: for development/testing
+      // code: [null, null, null, null],
       score: {
         perfect: 0,
         almost: 0,
@@ -43,7 +45,7 @@ class App extends Component {
         ))}>
           NextColor
         </button>
-        Selected color: {colors[this.state.selColorIdx]}
+          Selected color: {colors[this.state.selColorIdx]}
           <header className="App-header">React Mastermind</header>
             <div className='flex-h'>
               <GameBoard 
