@@ -8,7 +8,7 @@ const GuessRow = (props) => (
     <div>{props.rowIdx + 1}</div>
     <GuessPegs 
       colors={props.colors}
-      code={props}
+      code={props.guess.code}
     />
     {
       props.currentGuess ?
