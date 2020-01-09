@@ -15,13 +15,23 @@ class App extends Component {
     //state is an object that holds information in it's properties
     this.state = {
       selColorIdx: 0,
-      guesses: [],
+      guesses: [this.getNewGuess()],
       code: this.genCode(),
     };
   };
 
   genCode() {
     return new Array(4).fill().map(() => Math.floor(Math.random() * colors.length));
+  }
+
+  getNewGuess() {
+    return {
+      code: [null, null, null, null],
+      score: {
+        perfect: 0,
+        almost: 0,
+      },
+    };
   }
 
   render() {
