@@ -4,7 +4,7 @@ import GuessScore from '../GuessScore/GuessScore';
 
 const GuessRow = (props) => (
   <div className='flex-h'>
-    Guess Row #
+    <div>{props.rowIdx + 1}</div>
     <GuessPegs />
     <GuessScore />
   </div>
