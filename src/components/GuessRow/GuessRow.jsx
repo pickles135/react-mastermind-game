@@ -7,9 +7,13 @@ const GuessRow = (props) => (
     <div>{props.rowIdx + 1}</div>
     <GuessPegs 
       colors={props.colors}
-      code={props.guess.code}
+      code={props}
     />
-    <GuessScore />
+    {
+      props.currentGuess ?
+        <ScoreButton /> :
+        <GuessScore />
+    }
   </div>
 );
 
